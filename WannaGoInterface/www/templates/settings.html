@@ -1,0 +1,34 @@
+<ion-view ng-controller="UserController">  
+    <ion-content ng-controller="MotionCtrl">   
+        <div class="bar bar-header headerColor" style="position: static;">
+            <div class="h1 title font inputfont">Settings</div>
+        </div>
+        <ion-list class="list animate-blind">
+                <a class="item item-icon-left" ng-click="goToPass()">
+                    <i class="icon ion-edit" ></i> Change password
+                </a>
+                <a class="item item-icon-left">
+                    <i class="icon ion-document-text"></i> General terms
+                </a>
+                <a class="item item-icon-left">
+                    <i class="icon ion-alert"></i> Notifications
+                </a>
+                <a class="item item-icon-left" ng-click="disconnect()">
+                    <i class="icon ion-android-cancel"></i> Disconnect
+                </a>
+        </ion-list>
+    </ion-content>
+    <div class="tabs-striped tabs-color-positive navBar" style="position: static; margin-bottom: 15px;">
+        <div class="tabs">
+            <a class="tab-item" ui-sref="home" data-ink-color="#ef473a" data-ink-opacity=".35">
+                <i class="icon ion-home"></i>
+            </a>
+            <a class="tab-item" ui-sref="profile" ng-click="getUserInformation()" data-ink-color="#ef473a" data-ink-opacity=".35">
+                <i class="icon ion-star"></i> 
+            </a>
+            <a class="tab-item active" ui-sref="settings" data-ink-color="#ef473a" data-ink-opacity=".35">
+                <i class="icon ion-gear-a"></i> 
+            </a>
+        </div>
+    </div>
+</ion-view>

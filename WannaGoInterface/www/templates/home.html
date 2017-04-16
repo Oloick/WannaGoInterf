@@ -1,0 +1,21 @@
+<ion-view>  
+    <div ng-controller="UserController" ng-controller="InkCtrl">   
+        <ion-content>
+            <div class="contentProfile">
+            </div>
+        </ion-content> 
+        <div class="tabs-striped tabs-color-positive navBar" style="position: static; margin-bottom: 15px;">
+            <div class="tabs">
+                <a class="tab-item active" ui-sref="home" data-ink-color="#ef473a" data-ink-opacity=".35">
+                    <i class="icon ion-home"></i>
+                </a>
+                <a class="tab-item" ui-sref="profile" ng-click="getUserInformation()" data-ink-color="#ef473a" data-ink-opacity=".35">
+                    <i class="icon ion-star"></i> 
+                </a>
+                <a class="tab-item" ui-sref="settings"data-ink-color="#ef473a" data-ink-opacity=".35">
+                    <i class="icon ion-gear-a"></i> 
+                </a>
+            </div>
+        </div>
+    </div>
+</ion-view>

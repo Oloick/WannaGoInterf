@@ -1,0 +1,62 @@
+<ion-view>
+    <ion-content>
+        <div ng-controller="UserController" ng-init="getUserInformation(); getUserType(); getVoyageurInformation();">
+            <div>
+              <div class="coverDiv row">
+                <img src="{{cover}}" alt="cover" class="cover">
+              </div>
+              <div class="photoProfileDiv row">
+                <img src="{{photo}}" alt="" class="photoProfile">
+              </div>
+              <div>
+                <h1 class="username"> {{username}}</h1>
+                <h5 class="type"> {{type}} </h5>
+              </div>
+              <div>
+              </div>
+              <div>
+                <hr class="divider">
+              </div>
+              <div class="row informationVoyage">
+                <p class="col informationVoyageElmnt"> {{posts.length}} posts </p>
+                <p class="col informationVoyageElmnt"> {{reservations.length}} reservations </p>
+              </div>
+                <div>
+                  <hr class="divider">
+                </div>
+                <div class="postsStyle">
+                  <div class="row">
+                    <div class="col">
+
+                      <div class="list card" ng-controller="PostsController" ng-init="getVoyageurPosts()">
+                        <ion-item ng-repeat="post in posts">
+                          <div class="item item-avatar">
+                            <h2 class="descriptionPosts">{{post.photo.description}}</h2>
+                            <p class="datePosts">{{post.photo.date}}</p>
+                          </div>
+
+                          <div class="item item-image">
+                            <img src="{{post.photo.url}}">
+                          </div>
+                        </ion-item>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <div class="tabs-striped tabs-color-positive navBar" style="position: static; margin-bottom: 15px;">
+        <div class="tabs">
+            <a class="tab-item" ui-sref="home" data-ink-color="#ef473a" data-ink-opacity=".35">
+                <i class="icon ion-home"></i>
+            </a>
+            <a class="tab-item active" ui-sref="profile" ng-click="getUserInformation()" data-ink-color="#ef473a" data-ink-opacity=".35">
+                <i class="icon ion-star"></i>
+            </a>
+            <a class="tab-item" ui-sref="settings" data-ink-color="#ef473a" data-ink-opacity=".35">
+                <i class="icon ion-gear-a"></i>
+            </a>
+        </div>
+    </div>
+</ion-view>

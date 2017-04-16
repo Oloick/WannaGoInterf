@@ -1,0 +1,19 @@
+<ion-view class="backgroundBlue">
+    <ion-content ng-controller="UserController">
+        <h3 class="font inputfont titleSign">Sign In</h2>
+        <div class="list form font">
+            <label class="item item-input item-floating-label">
+                <p class="inputfont">Actual Password</p>
+                <input type="text" class="inputfont" ng-model="verifPassword">
+            </label>
+            <label class="item item-input item-floating-label">
+                <p class="inputfont">New Password</p>
+                <input type="password" ng-model="nwPassword">
+            </label>
+            <br>
+            <button class="button button-stable connectButton " ng-click="verifyBeforeChangePass()">
+                Change Password
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

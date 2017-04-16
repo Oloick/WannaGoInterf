@@ -1,0 +1,30 @@
+<ion-view class="backgroundBlue">
+    <ion-content class="loginPage" ng-controller="UserController">
+        <div class="row">
+            <div class="col col-80 col-offset-10 "><img class="logoLogin" src="./img/wannago.PNG" alt="WannaGo"></div>
+        </div>
+        <div class="list form">
+            <label class="item item-input item-floating-label">
+                <p class="inputfont">Username</p>
+                <input type="text" class="inputfont" ng-model="user.username">
+            </label>
+            <label class="item item-input item-floating-label">
+                <p class="inputfont">Password</p>
+                <input type="password" ng-model="user.password">
+            </label>
+            <br>
+            <button class="button button-stable connectButton " ng-click="connect()">
+                Connect
+            </button>
+            <p class="font inputfont ortext">OR</p>
+            <button class="button button-stable connectButton icon ion-social-facebook-outline fbButton" ng-click="connectWithFb()">
+                Connect with FB
+            </button>
+        </div>
+       <div class="inputfont recover">
+            <a>Forgot password?</a><br><br>
+            <a>Forgot username?</a><br><br>
+            <a class="signin font inputfont" ui-sref="signin">Sign in</a>
+       </div>
+    </ion-content>
+</ion-view>

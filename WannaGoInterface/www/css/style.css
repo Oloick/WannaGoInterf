@@ -212,19 +212,20 @@ p {
 margin-top:10px;
 }
 .connectButton{
-    margin-left: 28%;
     color:#03a9ff !important;
     font-weight: bold;
+    padding-left: 10px;
 }
 .form{
     width: 80%;
-    margin-left:10%;
+    margin-left:10%;background-color: rgba(57, 55, 55, 0.06);
+    border-radius: 10px;
 }
 .logoLogin{
     width: 100%;
 }
 .backgroundBlue{
-    background-color: #03a9ff;
+  background-image: url(http://www.airman.fr/communities/3/000/001/216/533/images/865357.jpg);
 }
 .backgroundWhite{
     background-color: #ffffff;
@@ -239,8 +240,8 @@ margin-top:10px;
     font-family: "RobotoDraft"
 }
 .recover{
-    margin-left: 30%;
-    font-size: 19px;
+    margin-left: 10%;
+    font-size: 15px;
 }
 .navBar{
     bottom: 0px;
@@ -336,10 +337,6 @@ margin-top:10px;
 	margin-left: 80%;
 	margin-top: -11%;
 }
-.fbButton{
-    margin-left: 14%;
-    margin-top:-6%;
-}
 .ortext{
     font-weight:bold;
     margin-top: 3%;
@@ -357,15 +354,14 @@ margin-top:10px;
     margin-top: 10% !important;
 }
 .list .item-radio .item-content {
-  background-color: #03a9ff;
+
   color: white;
 }
 .list .item-radio .radio-icon {
-  background-color: #03a9ff;
   color: white;
 }
 .item-radio input:checked + .radio-content .item-content {
-    background-color: #03a9ff;
+    background-color: transparent;
 }
 .card .item.item-avatar {
     min-height: 88px;

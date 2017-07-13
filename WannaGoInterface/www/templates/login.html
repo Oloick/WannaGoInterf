@@ -5,26 +5,30 @@
         </div>
         <div class="list form">
             <label class="item item-input item-floating-label">
-                <p class="inputfont">Username</p>
+                <p class="inputfont"><i class="icon ion-person"></i> Username</p>
                 <input type="text" class="inputfont" ng-model="user.username">
             </label>
             <label class="item item-input item-floating-label">
-                <p class="inputfont">Password</p>
+                <p class="inputfont"><i class="icon ion-locked"></i> Password</p>
                 <input type="password" ng-model="user.password">
             </label>
             <br>
-            <button class="button button-stable connectButton " ng-click="connect()">
-                Connect
-            </button>
-            <p class="font inputfont ortext">OR</p>
-            <button class="button button-stable connectButton icon ion-social-facebook-outline fbButton" ng-click="connectWithFb()">
-                Connect with FB
-            </button>
+            <div class="row col-12">
+                <button class="button button-stable connectButton" style="width:100%" ng-click="connect()">
+                    Connect
+                </button>
+            </div>
+                <br />
+            <div class="row col-12">
+                <button class="button button-stable connectButton icon ion-social-facebook-outline" style="width:100%" ng-click="connectWithFb()">
+                    Facebook
+                </button>
+            </div>
+        </br>
+            <div class="inputfont recover row col-md-12">
+                 <a class="col-md-6">Forgot account ?</a><br><br>
+                 <a class="signin font inputfont col-md-6" ui-sref="signin">Sign up</a>
+            </div>
         </div>
-       <div class="inputfont recover">
-            <a>Forgot password?</a><br><br>
-            <a>Forgot username?</a><br><br>
-            <a class="signin font inputfont" ui-sref="signin">Sign in</a>
-       </div>
     </ion-content>
 </ion-view>
